@@ -9,6 +9,7 @@ import Services from './pages/Services'
 import About from './pages/About_us'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import PageNotFound from './components/PageNotFound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -88,6 +89,7 @@ function App() {
             <Route path="/about" element={<About/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path="/register" element={<Register/>}></Route>
+            <Route path="*" element={<PageNotFound />}></Route>
           </Routes>
           <div className="row">
             <div className="col-12">
