@@ -1,7 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 
 export default function Header() {
+    const navigate = useNavigate();
+    const handleLogin = () => {
+        navigate("/login");
+    };
+
+    const handleRegister = () => {
+        navigate("/register");
+    };
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark mb-1 " >
@@ -27,8 +35,8 @@ export default function Header() {
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
-                            <button className="btn btn-outline-success me-2" type="submit">Register</button>
-                            <button className="btn btn-outline-success" type="submit">Login</button>
+                            <button className="btn btn-outline-success me-2" type="submit" onClick={handleRegister}>Register</button>
+                            <button className="btn btn-outline-success" type="submit" onClick={handleLogin}>Login</button>
                         </form>
                     </div>
                 </div>

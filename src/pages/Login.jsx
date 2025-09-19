@@ -17,7 +17,7 @@ function Login() {
     <div className="container-fluid vh-100">
       <div className="row h-100 align-items-center">
         <div className="col-md-6 d-none d-md-block p-0">
-          <img src={"imgs/log.jpg"} alt="login" className="img-fluid" />
+          <img src={"images/login.jpg"} alt="login" className="img-fluid" />
         </div>
 
         <div className="col-md-6 d-flex justify-content-center align-items-center">
