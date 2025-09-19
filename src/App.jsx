@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Contact from './pages/Contact' 
 import Services from './pages/Services'
 import About from './pages/About_us'
+import Login from './pages/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
             <Route path="/contact" element={<Contact/>}></Route>
             <Route path="/services" element={<Services/>}></Route>
             <Route path="/about" element={<About/>}></Route>
+            <Route path="/login" element={<Login/>}></Route>
           </Routes>
           <div className="row">
             <div className="col-12">
